@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nicky Ifnurzyam K. A. — IT Support & Mikrotik</title>
+<meta name="description" content="Biodata diri Nicky Ifnurzyam Khalil Akhbar - IT Support & Konfigurasi Mikrotik. Pelengkap CV." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div id="preloader">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <div class="loader-text">N<span>.</span></div>
+    <p>Memuat Portofolio...</p>
+    <div class="loader-bar"><span id="loadBar"></span></div>
+  </div>
+</div>
+
+<!-- Progress bar scroll -->
+<div class="scroll-progress"><span id="scrollProgressBar"></span></div>
+
+<!-- Background FX -->
+<canvas id="particles"></canvas>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+<div class="grid-overlay"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-terminal"></i></span>
+      <span class="logo-text">NICKY<span>.DEV</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Beranda</a></li>
+      <li><a href="#tentang" class="nav-link">Biodata</a></li>
+      <li><a href="#skill" class="nav-link">Skill</a></li>
+      <li><a href="#pengalaman" class="nav-link">Pengalaman</a></li>
+      <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
+      <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      <li class="nav-cta-mobile"><a href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20melihat%20CV%20online%20Anda%20dan%20tertarik%20untuk%20berdiskusi." target="_blank" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat WA</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="toggle glow"><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+      <a href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20melihat%20CV%20online%20Anda%20dan%20tertarik%20untuk%20berdiskusi." target="_blank" class="btn btn-wa nav-cta-desktop"><i class="fa-brands fa-whatsapp"></i> Chat WA</a>
+      <button class="hamburger" id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-left">
+      <div class="badge reveal"><span class="pulse-dot"></span> Tersedia untuk kerja • IT Support</div>
+      <p class="hero-hi reveal">Halo, saya</p>
+      <h1 class="hero-name reveal">
+        <span class="line">NICKY</span>
+        <span class="line gradient-text">IFNURZYAM</span>
+        <span class="line">KHALIL AKHBAR</span>
+      </h1>
+      <h2 class="typing-wrap reveal">Saya seorang <span id="typing"></span><span class="caret">|</span></h2>
+      <p class="hero-desc reveal">Lulusan muda yang fokus di <b>IT Support</b> & <b>Konfigurasi Mikrotik</b>. Siap membantu instalasi, troubleshooting jaringan, dan maintenance perangkat — cepat, rapi, dan bisa dihubungi langsung via WhatsApp.</p>
+      <div class="hero-btns reveal">
+        <a href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20melihat%20CV%20online%20Anda%20dan%20tertarik%20untuk%20berdiskusi." target="_blank" class="btn btn-primary magnetic"><i class="fa-brands fa-whatsapp"></i> Hubungi via WA</a>
+        <a href="#tentang" class="btn btn-ghost magnetic"><i class="fa-solid fa-id-card"></i> Lihat Biodata</a>
+        <button onclick="window.print()" class="btn btn-ghost magnetic"><i class="fa-solid fa-print"></i> Cetak CV</button>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><h3><span class="counter" data-target="2">0</span>+</h3><p>Keahlian Utama</p></div>
+        <div class="stat"><h3><span class="counter" data-target="17">0</span></h3><p>Usia (Tahun)</p></div>
+        <div class="stat"><h3><span class="counter" data-target="100">0</span>%</h3><p>Fast Respon WA</p></div>
+        <div class="stat"><h3>B+</h3><p>Gol. Darah</p></div>
+      </div>
+    </div>
+
+    <div class="hero-right reveal">
+      <div class="profile-card tilt" id="tiltCard">
+        <div class="profile-glow"></div>
+        <div class="profile-top">
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar">
+           <img src="assets/foto1.jpg.jpeg" alt="Foto profil" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="avatar-fallback" style="display:none;font-size:44px;font-weight:800">N</span>
+            </div>
+            <span class="status-badge"><span></span> Online</span>
+          </div>
+          <h3>Nicky Ifnurzyam K. A.</h3>
+          <p class="role"><i class="fa-solid fa-network-wired"></i> IT Support • Mikrotik</p>
+          <div class="profile-chips">
+            <span><i class="fa-solid fa-location-dot"></i> Tasikmalaya</span>
+            <span><i class="fa-solid fa-droplet"></i> B+</span>
+          </div>
+        </div>
+        <div class="profile-info">
+          <div><i class="fa-solid fa-cake-candles"></i><div><small>TTL</small><b>14 Nov 2008 • Tasikmalaya</b></div></div>
+          <div><i class="fa-solid fa-phone"></i><div><small>No HP / WA</small><b>0857-2370-0804</b></div></div>
+          <div><i class="fa-solid fa-house"></i><div><small>Alamat</small><b>Kp. Karanganyar, Cipondok, Sukaresik</b></div></div>
+        </div>
+        <div class="profile-actions">
+          <a class="btn btn-primary btn-block" target="_blank" href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20melihat%20CV%20online%20Anda."><i class="fa-brands fa-whatsapp"></i> Chat Sekarang</a>
+          <div class="icon-row">
+            <a href="tel:085723700804" title="Telepon"><i class="fa-solid fa-phone"></i></a>
+            <a href="sms:085723700804" title="SMS"><i class="fa-solid fa-message"></i></a>
+            <a href="#kontak" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <button id="copyWA" title="Salin Nomor"><i class="fa-solid fa-copy"></i></button>
+          </div>
+        </div>
+        <div class="card-shine"></div>
+      </div>
+
+      <!-- floating chips -->
+      <div class="float-chip fc1"><i class="fa-solid fa-server"></i> Mikrotik OS</div>
+      <div class="float-chip fc2"><i class="fa-solid fa-screwdriver-wrench"></i> IT Support</div>
+      <div class="float-chip fc3"><i class="fa-solid fa-wifi"></i> Networking</div>
+    </div>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>IT SUPPORT ✦ MIKROTIK ✦ HOTSPOT & PPPoE ✦ TROUBLESHOOTING ✦ INSTALASI JARINGAN ✦ MAINTENANCE PC ✦ IT SUPPORT ✦ MIKROTIK ✦&nbsp;</span>
+      <span>IT SUPPORT ✦ MIKROTIK ✦ HOTSPOT & PPPoE ✦ TROUBLESHOOTING ✦ INSTALASI JARINGAN ✦ MAINTENANCE PC ✦ IT SUPPORT ✦ MIKROTIK ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <a href="#tentang" class="scroll-down"><span></span> scroll</a>
+</header>
+
+<main>
+<!-- ===== TENTANG / BIODATA ===== -->
+<section id="tentang" class="section">
+  <div class="container">
+    <p class="section-tag reveal">01 • Tentang Saya</p>
+    <h2 class="section-title reveal">Biodata <span class="gradient-text">Diri Lengkap</span></h2>
+    <p class="section-sub reveal">Data ini sebagai pelengkap CV lamaran kerja. Klik ikon salin untuk menyalin data dengan cepat.</p>
+
+    <div class="biodata-grid">
+      <div class="glass-card reveal tilt-sm">
+        <div class="card-head"><i class="fa-solid fa-user-astronaut"></i><h3>Data Pribadi</h3></div>
+        <ul class="bio-list">
+          <li><span>Nama Lengkap</span><b>Nicky Ifnurzyam Khalil Akhbar <button class="copy" data-copy="Nicky Ifnurzyam Khalil Akhbar"><i class="fa-regular fa-copy"></i></button></b></li>
+          <li><span>Tempat, Tgl Lahir</span><b>Tasikmalaya, 14 November 2008 <button class="copy" data-copy="Tasikmalaya, 14 November 2008"><i class="fa-regular fa-copy"></i></button></b></li>
+          <li><span>Alamat</span><b>Kp. Karanganyar, Desa Cipondok, Kec. Sukaresik, Kab. Tasikmalaya <button class="copy" data-copy="Kp. Karanganyar, Desa Cipondok, Kec. Sukaresik, Kab. Tasikmalaya"><i class="fa-regular fa-copy"></i></button></b></li>
+          <li><span>No HP / WA</span><b><a class="link" target="_blank" href="https://wa.me/6285723700804">0857-2370-0804</a> <button class="copy" data-copy="085723700804"><i class="fa-regular fa-copy"></i></button></b></li>
+          <li><span>Golongan Darah</span><b>B+ (B Positif)</b></li>
+          <li><span>Status</span><b class="pill">Siap Bekerja • Full-time / Magang</b></li>
+        </ul>
+        <div class="qr-row">
+          <a class="btn btn-primary" target="_blank" href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20tertarik%20dengan%20profil%20Anda."><i class="fa-brands fa-whatsapp"></i> WA Langsung</a>
+          <a class="btn btn-ghost" href="tel:085723700804"><i class="fa-solid fa-phone"></i> Telepon</a>
+        </div>
+      </div>
+
+      <div class="right-col">
+        <div class="glass-card reveal">
+          <div class="card-head"><i class="fa-solid fa-bullseye"></i><h3>Tentang & Tujuan</h3></div>
+          <p class="just">Saya <b>Nicky</b>, pemuda asal Tasikmalaya yang antusias di bidang teknologi jaringan. Berpengalaman dalam <b>IT Support</b> (instal ulang, maintenance PC/laptop, printer, troubleshooting) dan <b>Konfigurasi Mikrotik</b> (Hotspot, PPPoE, DHCP, Firewall dasar, Queue/Bandwidth Management).</p>
+          <div class="tags">
+            <span>#Disiplin</span><span>#Jujur</span><span>#Cepat Belajar</span><span>#Pekerja Keras</span><span>#Siap Shift</span>
+          </div>
+        </div>
+
+        <div class="glass-card reveal">
+          <div class="card-head"><i class="fa-solid fa-graduation-cap"></i><h3>Pendidikan & Fokus</h3></div>
+          <div class="timeline">
+            <div class="tl-item"><span class="tl-dot"></span><div><b>Fokus Keahlian — IT Support</b><small>Hardware • Software • Troubleshooting • Instalasi</small></div></div>
+            <div class="tl-item"><span class="tl-dot"></span><div><b>Fokus Keahlian — Mikrotik & Jaringan</b><small>RouterBoard • Winbox • Hotspot • PPPoE • Access Point</small></div></div>
+            <div class="tl-item"><span class="tl-dot"></span><div><b>Siap Melengkapi Berkas CV</b><small>KTP • KK • Ijazah • SKCK • Pas Foto (menyusul saat lamaran)</small></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILL ===== -->
+<section id="skill" class="section">
+  <div class="container">
+    <p class="section-tag reveal">02 • Kemampuan</p>
+    <h2 class="section-title reveal">Skill <span class="gradient-text">Unggulan</span></h2>
+    <p class="section-sub reveal">Animasi bar akan terisi otomatis saat Anda scroll ke bagian ini.</p>
+
+    <div class="skill-grid">
+      <div class="glass-card skill-card reveal tilt-sm">
+        <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3>IT Support</h3>
+        <p>Instal ulang Windows, maintenance PC/laptop, instalasi printer, backup data, troubleshooting hardware & software.</p>
+        <div class="bar"><div class="fill" data-width="88%"><span>88%</span></div></div>
+        <div class="mini-tags"><span>Hardware</span><span>Software</span><span>Printer</span></div>
+      </div>
+
+      <div class="glass-card skill-card reveal tilt-sm">
+        <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <h3>Konfigurasi Mikrotik</h3>
+        <p>Setting Hotspot Voucher, PPPoE, DHCP Server, NAT, Firewall dasar, Simple Queue, monitoring via Winbox.</p>
+        <div class="bar"><div class="fill" data-width="85%"><span>85%</span></div></div>
+        <div class="mini-tags"><span>Winbox</span><span>Hotspot</span><span>PPPoE</span></div>
+      </div>
+
+      <div class="glass-card skill-card reveal tilt-sm">
+        <div class="skill-icon"><i class="fa-solid fa-wifi"></i></div>
+        <h3>Jaringan Dasar</h3>
+        <p>Crimping RJ45, topologi LAN, setting IP, Access Point, repeater, cek koneksi & latency.</p>
+        <div class="bar"><div class="fill" data-width="80%"><span>80%</span></div></div>
+        <div class="mini-tags"><span>LAN</span><span>WLAN</span><span>UTP</span></div>
+      </div>
+
+      <div class="glass-card skill-card reveal tilt-sm">
+        <div class="skill-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>Komunikasi & Servis</h3>
+        <p>Ramah ke user, fast respon WhatsApp, bisa menjelaskan kendala teknis dengan bahasa sederhana.</p>
+        <div class="bar"><div class="fill" data-width="92%"><span>92%</span></div></div>
+        <div class="mini-tags"><span>Helpdesk</span><span>Fast Respon</span></div>
+      </div>
+    </div>
+
+    <!-- tools -->
+    <div class="tools-row reveal">
+      <div class="tool"><i class="fa-solid fa-laptop"></i><span>Windows</span></div>
+      <div class="tool"><i class="fa-brands fa-linux"></i><span>Dasar Linux</span></div>
+      <div class="tool"><i class="fa-solid fa-print"></i><span>Printer</span></div>
+      <div class="tool"><i class="fa-solid fa-hard-drive"></i><span>Hardware</span></div>
+      <div class="tool"><i class="fa-solid fa-tower-broadcast"></i><span>Access Point</span></div>
+      <div class="tool"><i class="fa-solid fa-shield-halved"></i><span>Firewall</span></div>
+      <div class="tool"><i class="fa-solid fa-gauge-high"></i><span>Bandwidth</span></div>
+      <div class="tool"><i class="fa-solid fa-plug-circle-bolt"></i><span>Crimping</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PENGALAMAN / LAYANAN ===== -->
+<section id="pengalaman" class="section">
+  <div class="container">
+    <p class="section-tag reveal">03 • Nilai Plus</p>
+    <h2 class="section-title reveal">Kenapa Memilih <span class="gradient-text">Saya?</span></h2>
+
+    <div class="why-grid">
+      <div class="glass-card why reveal"><span class="num">01</span><i class="fa-solid fa-bolt"></i><h3>Fast Respon WA</h3><p>Bisa dihubungi langsung via WhatsApp di <b>0857-2370-0804</b>. Klik tombol hijau, langsung chat tanpa save nomor.</p></div>
+      <div class="glass-card why reveal"><span class="num">02</span><i class="fa-solid fa-diagram-project"></i><h3>Praktis & Solutif</h3><p>Fokus menyelesaikan masalah jaringan & perangkat sampai tuntas, bukan sekadar teori.</p></div>
+      <div class="glass-card why reveal"><span class="num">03</span><i class="fa-solid fa-hand-holding-dollar"></i><h3>Siap Kerja Lapangan</h3><p>Bersedia kerja shift, lembur, dan penempatan area Tasikmalaya & sekitarnya.</p></div>
+    </div>
+
+    <div class="cta-banner reveal">
+      <div>
+        <h3>Butuh IT Support / Setting Mikrotik?</h3>
+        <p>Klik tombol di samping — Anda akan langsung diarahkan ke WhatsApp saya.</p>
+      </div>
+      <a class="btn btn-wa-big magnetic" target="_blank" href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20butuh%20bantuan%20IT%20Support%20%2F%20Setting%20Mikrotik."><i class="fa-brands fa-whatsapp"></i> 0857-2370-0804</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PORTOFOLIO ===== -->
+<section id="portofolio" class="section">
+  <div class="container">
+    <p class="section-tag reveal">03 • Karya & Proyek</p>
+    <h2 class="section-title reveal">Portofolio <span class="gradient-text">Saya</span></h2>
+    <p class="section-sub reveal">Beberapa hasil pekerjaan dan konfigurasi yang telah saya kerjakan di bidang IT Support serta jaringan Mikrotik.</p>
+
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <div class="glass-card portfolio-item reveal tilt-sm">
+        <div class="portfolio-badge">Mikrotik</div>
+        <div class="portfolio-thumb">
+          <div class="portfolio-icon"><i class="fa-solid fa-wifi"></i></div>
+        </div>
+        <h3>Setting Hotspot Voucher Mikrotik</h3>
+        <p class="portfolio-desc">Konfigurasi RouterBoard Mikrotik dengan sistem Hotspot Voucher untuk warnet/cafe, termasuk user manager, login page custom, dan pembatasan bandwidth per voucher.</p>
+        <div class="portfolio-tech">
+          <span>Mikrotik OS</span><span>Winbox</span><span>Hotspot</span><span>Queue</span>
+        </div>
+        <a href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20tertarik%20dengan%20jasa%20Setting%20Hotspot%20Voucher%20Mikrotik." target="_blank" class="btn btn-primary btn-block">Diskusi via WA</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass-card portfolio-item reveal tilt-sm">
+        <div class="portfolio-badge">Jaringan</div>
+        <div class="portfolio-thumb">
+          <div class="portfolio-icon"><i class="fa-solid fa-network-wired"></i></div>
+        </div>
+        <h3>Instalasi Jaringan LAN + Access Point</h3>
+        <p class="portfolio-desc">Pemasangan kabel UTP Cat 6, crimping RJ45, setting IP statis/DHCP, dan konfigurasi Access Point sebagai repeater untuk memperluas cakupan Wi-Fi ruangan.</p>
+        <div class="portfolio-tech">
+          <span>LAN</span><span>UTP Cat6</span><span>Access Point</span><span>DHCP</span>
+        </div>
+        <a href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20tertarik%20dengan%20jasa%20Instalasi%20Jaringan%20LAN." target="_blank" class="btn btn-primary btn-block">Diskusi via WA</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="glass-card portfolio-item reveal tilt-sm">
+        <div class="portfolio-badge">IT Support</div>
+        <div class="portfolio-thumb">
+          <div class="portfolio-icon"><i class="fa-solid fa-laptop"></i></div>
+        </div>
+        <h3>Maintenance & Instal Ulang PC/Laptop</h3>
+        <p class="portfolio-desc">Servis komputer dan laptop: instal ulang Windows, penanganan blue screen, instalasi driver, pencarian & penghapusan virus, serta backup data pengguna.</p>
+        <div class="portfolio-tech">
+          <span>Windows</span><span>Hardware</span><span>Software</span><span>Backup</span>
+        </div>
+        <a href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20tertarik%20dengan%20jasa%20Maintenance%20PC%2FLaptop." target="_blank" class="btn btn-primary btn-block">Diskusi via WA</a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="glass-card portfolio-item reveal tilt-sm">
+        <div class="portfolio-badge">Mikrotik</div>
+        <div class="portfolio-thumb">
+          <div class="portfolio-icon"><i class="fa-solid fa-gauge-high"></i></div>
+        </div>
+        <h3>PPPoE & Bandwidth Management</h3>
+        <p class="portfolio-desc">Setting server PPPoE untuk client ISP sederhana, konfigurasi Simple Queue / PCQ untuk membagi bandwidth adil antar pengguna, dan NAT dasar untuk sharing internet.</p>
+        <div class="portfolio-tech">
+          <span>PPPoE</span><span>Queue</span><span>NAT</span><span>ISP</span>
+        </div>
+        <a href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20tertarik%20dengan%20jasa%20PPPoE%20%2F%20Bandwidth%20Management." target="_blank" class="btn btn-primary btn-block">Diskusi via WA</a>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="glass-card portfolio-item reveal tilt-sm">
+        <div class="portfolio-badge">IT Support</div>
+        <div class="portfolio-thumb">
+          <div class="portfolio-icon"><i class="fa-solid fa-print"></i></div>
+        </div>
+        <h3>Instalasi & Troubleshooting Printer</h3>
+        <p class="portfolio-desc">Pemasangan printer jaringan dan USB, instalasi driver, penanganan error spooler, jadwalkan maintenance rutin, serta sharing printer antar komputer di LAN.</p>
+        <div class="portfolio-tech">
+          <span>Printer</span><span>Driver</span><span>LAN Sharing</span><span>Spooler</span>
+        </div>
+        <a href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20tertarik%20dengan%20jasa%20Instalasi%20Printer." target="_blank" class="btn btn-primary btn-block">Diskusi via WA</a>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="glass-card portfolio-item reveal tilt-sm">
+        <div class="portfolio-badge">Jaringan</div>
+        <div class="portfolio-thumb">
+          <div class="portfolio-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        </div>
+        <h3>Firewall Dasar & Kecepatan Jaringan</h3>
+        <p class="portfolio-desc">Konfigurasi firewall dasar Mikrotik untuk melindungi jaringan lokal dari ancaman luar, filter akses situs, dan pembatasan port untuk keamanan lebih baik.</p>
+        <div class="portfolio-tech">
+          <span>Firewall</span><span>Mikrotik</span><span>Filter</span><span>Keamanan</span>
+        </div>
+        <a href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20tertarik%20dengan%20jasa%20Firewall%20Mikrotik." target="_blank" class="btn btn-primary btn-block">Diskusi via WA</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KONTAK ===== -->
+<section id="kontak" class="section">
+  <div class="container">
+    <p class="section-tag reveal">04 • Kontak</p>
+    <h2 class="section-title reveal">Mari <span class="gradient-text">Terhubung</span></h2>
+    <p class="section-sub reveal">Isi form di bawah — pesan otomatis terkirim ke WhatsApp saya.</p>
+
+    <div class="kontak-grid">
+      <div class="glass-card reveal">
+        <div class="card-head"><i class="fa-solid fa-paper-plane"></i><h3>Kirim Pesan Cepat</h3></div>
+        <form id="waForm">
+          <label>Nama Anda<input id="fNama" type="text" placeholder="Contoh: Pak Budi" required></label>
+          <label>Keperluan<select id="fPerlu"><option>Lamaran / Tawaran Kerja</option><option>Jasa IT Support</option><option>Setting Mikrotik</option><option>Lainnya</option></select></label>
+          <label>Pesan<textarea id="fPesan" rows="4" placeholder="Tulis pesan..." required></textarea></label>
+          <button class="btn btn-primary btn-block" type="submit"><i class="fa-brands fa-whatsapp"></i> Kirim ke WhatsApp</button>
+        </form>
+      </div>
+
+      <div class="right-col">
+        <a class="contact-item reveal" target="_blank" href="https://wa.me/6285723700804">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div><small>WhatsApp (Utama)</small><b>0857-2370-0804 — Klik untuk chat</b></div>
+          <i class="fa-solid fa-arrow-up-right-from-square go"></i>
+        </a>
+        <a class="contact-item reveal" href="tel:085723700804">
+          <i class="fa-solid fa-phone"></i>
+          <div><small>Telepon / SMS</small><b>085723700804</b></div>
+          <i class="fa-solid fa-arrow-up-right-from-square go"></i>
+        </a>
+        <div class="contact-item reveal">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><small>Alamat</small><b>Kp. Karanganyar, Cipondok, Sukaresik, Tasikmalaya</b></div>
+        </div>
+        <div class="contact-item reveal">
+          <i class="fa-solid fa-cake-candles"></i>
+          <div><small>TTL & Gol. Darah</small><b>14-11-2008 Tasikmalaya • B+</b></div>
+        </div>
+        <div class="clock-card reveal"><i class="fa-solid fa-clock"></i><div><small>Waktu lokal Anda</small><b id="clock">--:--:--</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <p>© 2026 <b>Nicky Ifnurzyam Khalil Akhbar</b> • Biodata Pelengkap CV • Tasikmalaya</p>
+    <button id="toTop" aria-label="ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+</footer>
+
+<!-- WA floating -->
+<a id="waFloat" target="_blank" href="https://wa.me/6285723700804?text=Halo%20Nicky%2C%20saya%20melihat%20CV%20online%20Anda."><i class="fa-brands fa-whatsapp"></i><span>Chat Saya</span></a>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
